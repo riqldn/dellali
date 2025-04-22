@@ -12,7 +12,7 @@ const rockstar = localFont({
 })
 
 const instrument = localFont({
-  src: './fonts/instrument.woff2',
+  src: './fonts/Instrument.woff2',
   variable: "--font-instrument",
   weight: "100 600"
 })
