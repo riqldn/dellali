@@ -44,7 +44,7 @@ body {
 
 }
 
-/* 
+
 .disable-scrollbars::-webkit-scrollbar {
   background: transparent; 
   width: 0px;
@@ -55,7 +55,7 @@ body {
   -ms-overflow-style: none;  
   z-index: 99;
 }
- */
+
 
 .rockstar {
   font-family: var(--font-rockstar);
