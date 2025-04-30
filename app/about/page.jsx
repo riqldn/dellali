@@ -98,7 +98,6 @@ export default function about() {
 
 
 
-            <Image className="overlay " src={grain} alt='' quality={80} sizes="100vw" />
         </div>
     )
 }

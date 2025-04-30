@@ -262,7 +262,7 @@ export default function Home() {
 
         <section className="fixed top-0  z-20 w-full min-h-screen md:min-h-screen ">
 
-          <div className="pointer-events-none flex h-svh md:h-full w-full justify-center flex-row items-center absolute top-0 z-50 text-secondary font-instrument">
+          <div className="pointer-events-none flex h-screen md:h-full w-full justify-center flex-row items-center absolute top-0 z-50 text-secondary font-instrument">
             <h1 className="text-center pointer-events-auto">TELLING THE STORIES THAT MATTER</h1>
           </div>
           <div className="p-4 md:p-8 flex flex-row absolute bottom-0 justify-between w-full z-30 ">
