@@ -258,9 +258,9 @@ export default function Home() {
 
       </nav>
       {/* Home Section */}
-      <section className="fixed top-0  z-20 w-full min-h-svh md:min-h-screen ">
+      <section className="fixed top-0  z-20 w-full min-h-screen md:min-h-screen ">
 
-        <div className="pointer-events-none flex h-full w-full justify-center flex-row items-center absolute top-0 z-50 text-secondary font-instrument">
+        <div className="pointer-events-none flex h-svh w-full justify-center flex-row items-center absolute top-0 z-50 text-secondary font-instrument">
           <h1 className="text-center pointer-events-auto">TELLING THE STORIES THAT MATTER</h1>
         </div>
         <div className="p-4 md:p-8 flex flex-row absolute bottom-0 justify-between w-full z-30 ">
