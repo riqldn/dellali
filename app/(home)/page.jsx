@@ -295,7 +295,7 @@ export default function Home() {
           <motion.div style={{ clipPath: clipPathSelf }} className="absolute z-[56] top-0 w-full min-h-screen">
 
             <Video muted loop controls={false} className="absolute top-0 min-h-screen w-full" src={inTheGrain}></Video>
-            <div className="w-full p-4 md:p-4 min-h-svh md:min-h-screen flex flex-col justify-end absolute top-0">
+            <div className="w-full p-4 md:p-4 min-h-dvh md:min-h-screen flex flex-col justify-end absolute top-0">
               <div className="mx-auto relative bottom-0  flex flex-row w-full justify-between ">
                 <span className="self-end text-primary flex flex-col font-rockstar">
                   <span className="block overflow-hidden mb-[-10px] ">
@@ -327,7 +327,7 @@ export default function Home() {
           <motion.div style={{ clipPath: clipPathGrain }} className="absolute z-[55] top-0 w-full min-h-screen">
 
             <Video muted loop controls={false} className="absolute top-0 min-h-screen w-full" src={self}></Video>
-            <div className="w-full p-4 md:p-4 min-h-svh md:min-h-screen flex flex-col justify-end absolute top-0">
+            <div className="w-full p-4 md:p-4 min-h-dvh md:min-h-screen flex flex-col justify-end absolute top-0">
               <div className="mx-auto relative bottom-0  flex flex-row w-full justify-between ">
                 <span className="self-end text-primary flex flex-col font-rockstar">
                   <span className="block overflow-hidden mb-[-10px] ">
