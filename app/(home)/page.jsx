@@ -154,7 +154,6 @@ export default function Home() {
           </h1>
         </div>
       </section>
-
   
   <nav className=" overflow-hidden  p-4 md:p-8 top-0 flex justify-between flex-row text-white fixed w-full z-50">
         <Link name="Home" className="z-50 overflow-hidden " href="/">
@@ -259,7 +258,7 @@ export default function Home() {
 
       </nav>
       {/* Home Section */}
-      <section className="fixed top-0  z-20 w-full min-h-svh">
+      <section className="fixed top-0  z-20 w-full min-h-svh md:min-h-screen ">
 
         <div className="pointer-events-none flex h-full w-full justify-center flex-row items-center absolute top-0 z-50 text-secondary font-instrument">
           <h1 className="text-center pointer-events-auto">TELLING THE STORIES THAT MATTER</h1>
