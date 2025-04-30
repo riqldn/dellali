@@ -258,10 +258,9 @@ export default function Home() {
 
       </nav>
       {/* Home Section */}
-      <div className="fixed top-0 min-h-screen w-full">
 
 
-        <section className="absolute top-0  z-20 w-full min-h-screen md:min-h-screen ">
+        <section className="fixed top-0  z-20 w-full min-h-screen md:min-h-screen ">
 
           <div className="pointer-events-none flex h-svh md:h-full w-full justify-center flex-row items-center absolute top-0 z-50 text-secondary font-instrument">
             <h1 className="text-center pointer-events-auto">TELLING THE STORIES THAT MATTER</h1>
@@ -283,7 +282,7 @@ export default function Home() {
           </div>
           <Image className="granite" src={granite} fill alt='' quality={80} sizes="100vw" />
         </section>
-      </div>
+    
 
 
       <motion.div style={{ scale: scaleVideo, filter: saturate }} className="z-30 overflow-hidden  min-h-screen origin-center w-full  fixed top-0">
