@@ -76,17 +76,17 @@ export default function Home() {
     const contact = document.querySelector('.contact-nav')
     const contactMobile = document.querySelector('.contact-m')
     const sequence = [
-      [one, { opacity: 1 }, { duration: 1, ease: "easeInOut" }],
-      [two, { opacity: 1 }, { duration: 1, ease: "easeInOut" }],
-      [three, { opacity: 1 }, { duration: 1, ease: "easeInOut" }],
-      [four, { opacity: 1 }, { duration: 1, ease: "easeInOut" }],
-      [five, { opacity: 2 }, { duration: 1, ease: "easeInOut" }],
-      [loader, { opacity: 0 }, { duration: 1, ease: "easeInOut" }],
+      [one, { opacity: 1 }, { duration: 0.5, ease: "easeInOut" }],
+      [two, { opacity: 1 }, { duration: 0.5, ease: "easeInOut" }],
+      [three, { opacity: 1 }, { duration: 0.5, ease: "easeInOut" }],
+      [four, { opacity: 1 }, { duration: 0.5, ease: "easeInOut" }],
+      [five, { opacity: 2 }, { duration: 0.5, ease: "easeInOut" }],
+      [loader, { opacity: 0 }, { duration: 0.8, ease: "easeInOut" }],
       ['.home-header', { translateY: "0%" }, { duration: 0.5, ease: "easeInOut" }],
     ]
     animate(sequence)
 
-    if(isActive){
+    if (isActive) {
       if (window.location.pathname === '/') {
         home.classList.add("active")
         homeMobile.classList.add("active")
@@ -154,8 +154,8 @@ export default function Home() {
           </h1>
         </div>
       </section>
-  
-  <nav className=" overflow-hidden  p-4 md:p-8 top-0 flex justify-between flex-row text-white fixed w-full z-50">
+
+      <nav className=" overflow-hidden  p-4 md:p-8 top-0 flex justify-between flex-row text-white fixed w-full z-50">
         <Link name="Home" className="z-50 overflow-hidden " href="/">
           <motion.span style={{ scale: scaleText }} className="origin-top-left max-h-[60px] max-w-[260px] md:max-h-max md:max-w-max overflow-hidden inline-block">
 
@@ -258,29 +258,32 @@ export default function Home() {
 
       </nav>
       {/* Home Section */}
-      <section className="fixed top-0  z-20 w-full min-h-screen md:min-h-screen ">
+      <div className="fixed top-0 min-h-screen w-full">
 
-        <div className="pointer-events-none flex h-svh w-full justify-center flex-row items-center absolute top-0 z-50 text-secondary font-instrument">
-          <h1 className="text-center pointer-events-auto">TELLING THE STORIES THAT MATTER</h1>
-        </div>
-        <div className="p-4 md:p-8 flex flex-row absolute bottom-0 justify-between w-full z-30 ">
-          <p className="text-xs md:text-base self-end text-secondary text-nowrap">
-            *Film Director<br />
-            *Documentary Filmmaker
-          </p>
-          <span className="relative md:max-w-max  overflow-hidden justify-self-end  md:relative    md:p-0  origin-bottom-right block">
-            <motion.svg initial={{ translateY: "120%" }} className="home-header  md:scale-88 relative max-h-[60px] md:max-h-max max-w-max origin-bottom-right " style={{ translateY: textTranslate }} width="388" height="112" viewBox="0 0 388 112" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M387.556 112H356.836L345.636 68.16H340.676V112H308.516V0H364.516C370.062 0 374.809 1.76 378.756 5.28C382.702 8.69333 384.676 13.1733 384.676 18.72V49.6C384.676 56.96 381.369 62.3467 374.756 65.76L387.556 112ZM349.636 49.6C350.382 49.6 351.022 49.3333 351.556 48.8C352.196 48.16 352.516 47.4667 352.516 46.72V21.6C352.516 20.7467 352.196 20.0533 351.556 19.52C351.022 18.9867 350.382 18.72 349.636 18.72H340.676V49.6H349.636Z" fill="#F9F9F9" />
-              <path d="M279.419 112H243.579C238.032 112 233.286 110.293 229.339 106.88C225.392 103.36 223.419 98.8267 223.419 93.28V18.72C223.419 13.1733 225.392 8.69333 229.339 5.28C233.286 1.76 238.032 0 243.579 0H279.419C284.966 0 289.712 1.76 293.659 5.28C297.606 8.69333 299.579 13.1733 299.579 18.72V93.28C299.579 98.8267 297.606 103.36 293.659 106.88C289.712 110.293 284.966 112 279.419 112ZM264.539 93.28C265.286 93.28 265.926 93.0133 266.459 92.48C267.099 91.9467 267.419 91.2533 267.419 90.4V21.6C267.419 20.7467 267.099 20.0533 266.459 19.52C265.926 18.9867 265.286 18.72 264.539 18.72H258.459C257.712 18.72 257.019 18.9867 256.379 19.52C255.846 20.0533 255.579 20.7467 255.579 21.6V90.4C255.579 91.2533 255.846 91.9467 256.379 92.48C257.019 93.0133 257.712 93.28 258.459 93.28H264.539Z" fill="#F9F9F9" />
-              <path d="M188.325 112H156.165V0H219.365V18.72H188.325V45.92H216.485V64.64H188.325V112Z" fill="#F9F9F9" />
-              <path d="M149.128 112H85.9277V0H149.128V18.72H118.088V44.48H146.888V63.2H118.088V93.28H149.128V112Z" fill="#F9F9F9" />
-              <path d="M56.8467 112H0.84668V0H56.8467C62.3933 0 67.14 1.76 71.0867 5.28C75.0334 8.69333 77.0067 13.1733 77.0067 18.72V93.28C77.0067 98.8267 75.0334 103.36 71.0867 106.88C67.14 110.293 62.3933 112 56.8467 112ZM41.9667 93.28C42.7133 93.28 43.3533 93.0133 43.8867 92.48C44.5267 91.9467 44.8467 91.2533 44.8467 90.4V21.6C44.8467 20.7467 44.5267 20.0533 43.8867 19.52C43.3533 18.9867 42.7133 18.72 41.9667 18.72H33.0067V93.28H41.9667Z" fill="#F9F9F9" />
-            </motion.svg>
-          </span>
-        </div>
-        <Image className="granite" src={granite} fill alt='' quality={80} sizes="100vw" />
-      </section>
 
+        <section className="absolute top-0  z-20 w-full min-h-svh md:min-h-screen ">
+
+          <div className="pointer-events-none flex h-svh md:h-full w-full justify-center flex-row items-center absolute top-0 z-50 text-secondary font-instrument">
+            <h1 className="text-center pointer-events-auto">TELLING THE STORIES THAT MATTER</h1>
+          </div>
+          <div className="p-4 md:p-8 flex flex-row absolute bottom-0 justify-between w-full z-30 ">
+            <p className="text-xs md:text-base self-end text-secondary text-nowrap">
+              *Film Director<br />
+              *Documentary Filmmaker
+            </p>
+            <span className="relative md:max-w-max  overflow-hidden justify-self-end  md:relative    md:p-0  origin-bottom-right block">
+              <motion.svg initial={{ translateY: "120%" }} className="home-header  md:scale-88 relative max-h-[60px] md:max-h-max max-w-max origin-bottom-right " style={{ translateY: textTranslate }} width="388" height="112" viewBox="0 0 388 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M387.556 112H356.836L345.636 68.16H340.676V112H308.516V0H364.516C370.062 0 374.809 1.76 378.756 5.28C382.702 8.69333 384.676 13.1733 384.676 18.72V49.6C384.676 56.96 381.369 62.3467 374.756 65.76L387.556 112ZM349.636 49.6C350.382 49.6 351.022 49.3333 351.556 48.8C352.196 48.16 352.516 47.4667 352.516 46.72V21.6C352.516 20.7467 352.196 20.0533 351.556 19.52C351.022 18.9867 350.382 18.72 349.636 18.72H340.676V49.6H349.636Z" fill="#F9F9F9" />
+                <path d="M279.419 112H243.579C238.032 112 233.286 110.293 229.339 106.88C225.392 103.36 223.419 98.8267 223.419 93.28V18.72C223.419 13.1733 225.392 8.69333 229.339 5.28C233.286 1.76 238.032 0 243.579 0H279.419C284.966 0 289.712 1.76 293.659 5.28C297.606 8.69333 299.579 13.1733 299.579 18.72V93.28C299.579 98.8267 297.606 103.36 293.659 106.88C289.712 110.293 284.966 112 279.419 112ZM264.539 93.28C265.286 93.28 265.926 93.0133 266.459 92.48C267.099 91.9467 267.419 91.2533 267.419 90.4V21.6C267.419 20.7467 267.099 20.0533 266.459 19.52C265.926 18.9867 265.286 18.72 264.539 18.72H258.459C257.712 18.72 257.019 18.9867 256.379 19.52C255.846 20.0533 255.579 20.7467 255.579 21.6V90.4C255.579 91.2533 255.846 91.9467 256.379 92.48C257.019 93.0133 257.712 93.28 258.459 93.28H264.539Z" fill="#F9F9F9" />
+                <path d="M188.325 112H156.165V0H219.365V18.72H188.325V45.92H216.485V64.64H188.325V112Z" fill="#F9F9F9" />
+                <path d="M149.128 112H85.9277V0H149.128V18.72H118.088V44.48H146.888V63.2H118.088V93.28H149.128V112Z" fill="#F9F9F9" />
+                <path d="M56.8467 112H0.84668V0H56.8467C62.3933 0 67.14 1.76 71.0867 5.28C75.0334 8.69333 77.0067 13.1733 77.0067 18.72V93.28C77.0067 98.8267 75.0334 103.36 71.0867 106.88C67.14 110.293 62.3933 112 56.8467 112ZM41.9667 93.28C42.7133 93.28 43.3533 93.0133 43.8867 92.48C44.5267 91.9467 44.8467 91.2533 44.8467 90.4V21.6C44.8467 20.7467 44.5267 20.0533 43.8867 19.52C43.3533 18.9867 42.7133 18.72 41.9667 18.72H33.0067V93.28H41.9667Z" fill="#F9F9F9" />
+              </motion.svg>
+            </span>
+          </div>
+          <Image className="granite" src={granite} fill alt='' quality={80} sizes="100vw" />
+        </section>
+      </div>
 
 
       <motion.div style={{ scale: scaleVideo, filter: saturate }} className="z-30 overflow-hidden  min-h-screen origin-center w-full  fixed top-0">
@@ -292,7 +295,7 @@ export default function Home() {
           <motion.div style={{ clipPath: clipPathSelf }} className="absolute z-[56] top-0 w-full min-h-screen">
 
             <Video muted loop controls={false} className="absolute top-0 min-h-screen w-full" src={inTheGrain}></Video>
-            <div className="w-full p-4 md:p-4 min-h-screen flex flex-col justify-end absolute top-0">
+            <div className="w-full p-4 md:p-4 min-h-svh md:min-h-screen flex flex-col justify-end absolute top-0">
               <div className="mx-auto relative bottom-0  flex flex-row w-full justify-between ">
                 <span className="self-end text-primary flex flex-col font-rockstar">
                   <span className="block overflow-hidden mb-[-10px] ">
@@ -324,7 +327,7 @@ export default function Home() {
           <motion.div style={{ clipPath: clipPathGrain }} className="absolute z-[55] top-0 w-full min-h-screen">
 
             <Video muted loop controls={false} className="absolute top-0 min-h-screen w-full" src={self}></Video>
-            <div className="w-full p-4 md:p-4 min-h-screen flex flex-col justify-end absolute top-0">
+            <div className="w-full p-4 md:p-4 min-h-svh md:min-h-screen flex flex-col justify-end absolute top-0">
               <div className="mx-auto relative bottom-0  flex flex-row w-full justify-between ">
                 <span className="self-end text-primary flex flex-col font-rockstar">
                   <span className="block overflow-hidden mb-[-10px] ">
@@ -351,7 +354,7 @@ export default function Home() {
           <motion.div style={{ clipPath: clipPathSanctuary }} className="absolute z-[54] top-0 w-full min-h-screen">
             <motion.div className="absolute top-0 w-full min-h-screen">
               <Video muted loop controls={false} className="absolute top-0 min-h-screen w-full" src={sanctuary}></Video>
-              <div className="w-full p-4 md:p-4 min-h-screen flex flex-col justify-end absolute top-0">
+              <div className="w-full p-4 md:p-4 min-h-svh md:min-h-screen flex flex-col justify-end absolute top-0">
 
                 <div className="mx-auto relative bottom-0  flex flex-row w-full justify-between ">
 
@@ -383,7 +386,7 @@ export default function Home() {
 
 
               <Video muted loop controls={false} className="absolute top-0 min-h-screen w-full" src={myFather}></Video>
-              <div className="w-full p-4 md:p-4 min-h-screen flex flex-col justify-end absolute top-0">
+              <div className="w-full p-4 md:p-4 min-h-svh md:min-h-screen flex flex-col justify-end absolute top-0">
                 <div className="mx-auto relative bottom-0  flex flex-row w-full justify-between ">
                   <span className="self-end text-primary flex flex-col font-rockstar">
                     <span className="block overflow-hidden mb-[-10px] ">
@@ -415,7 +418,7 @@ export default function Home() {
 
 
               <Video muted loop controls={false} className="absolute top-0 min-h-screen w-full" src={chaps}></Video>
-              <div className="w-full p-4 md:p-4 min-h-screen flex flex-col justify-end absolute top-0">
+              <div className="w-full p-4 md:p-4 min-h-svh md:min-h-screen flex flex-col justify-end absolute top-0">
                 <div className="mx-auto relative bottom-0  flex flex-row w-full justify-between ">
                   <span className="self-end text-primary flex flex-col font-rockstar">
                     <span className="block overflow-hidden mb-[-10px] ">
@@ -447,7 +450,7 @@ export default function Home() {
 
 
               <Video muted loop controls={false} className="absolute top-0 min-h-screen w-full" src={chapsUncut}></Video>
-              <div className="w-full p-4 md:p-4 min-h-screen flex flex-col justify-end absolute top-0">
+              <div className="w-full p-4 md:p-4 min-h-svh md:min-h-screen flex flex-col justify-end absolute top-0">
                 <div className="mx-auto relative bottom-0  flex flex-row w-full justify-between ">
                   <span className="self-end text-primary flex flex-col font-rockstar">
                     <span className="block overflow-hidden mb-[-10px] ">
@@ -482,7 +485,7 @@ export default function Home() {
       {/* Spacer that handles the initial video translation */}
       <div ref={spacerInitial} className="spacer z-[100] relative min-h-screen w-full"></div>
       {/* Spacer that scales video full screen */}
-      <div ref={spacerScale} className="min-h-screen relative z-[100 ] border border-purple-500 w-full"></div>
+      <div ref={spacerScale} className="min-h-screen relative z-[100 ] w-full"></div>
 
       {/* Spacers for clip Path reveals */}
       <div ref={space} className="min-h-24"></div>
