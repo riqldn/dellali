@@ -157,9 +157,9 @@ export default function Home() {
 
       <nav className=" overflow-hidden  p-4 md:p-8 top-0 flex justify-between flex-row text-white fixed w-full z-50">
         <Link name="Home" className="z-50 overflow-hidden " href="/">
-          <motion.span style={{ scale: scaleText }} className="origin-top-left max-h-[35px] max-w-[235px] md:max-h-max md:max-w-max overflow-hidden inline-block">
+          <motion.span style={{ scale: scaleText }} className="origin-top-left max-h-[60px] max-w-[260px] md:max-h-max md:max-w-max overflow-hidden inline-block">
 
-            <motion.svg initial={{ translateY: "120%" }} className="home-header relative origin-top-left scale-50 md:scale-88" width="460" height="112" viewBox="0 0 460 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <motion.svg initial={{ translateY: "120%" }} className="home-header relative origin-top-left scale-40 md:scale-88" width="460" height="112" viewBox="0 0 460 112" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M463.069 112H430.909V0H463.069V112Z" fill="#F9F9F9" />
               <path d="M428.492 112H368.172V0H400.332V93.28H428.492V112Z" fill="#F9F9F9" />
               <path d="M365.755 112H305.435V0H337.595V93.28H365.755V112Z" fill="#F9F9F9" />
@@ -271,7 +271,7 @@ export default function Home() {
               *Documentary Filmmaker
             </p>
             <span className="relative md:max-w-max  overflow-hidden justify-self-end  md:relative    md:p-0  origin-bottom-right block">
-              <motion.svg initial={{ translateY: "120%" }} className="home-header  md:scale-88 relative max-h-[35px] md:max-h-max max-w-max origin-bottom-right " style={{ translateY: textTranslate }} width="388" height="112" viewBox="0 0 388 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <motion.svg initial={{ translateY: "120%" }} className="home-header  md:scale-88 relative max-h-[60px] md:max-h-max max-w-max origin-bottom-right " style={{ translateY: textTranslate }} width="388" height="112" viewBox="0 0 388 112" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M387.556 112H356.836L345.636 68.16H340.676V112H308.516V0H364.516C370.062 0 374.809 1.76 378.756 5.28C382.702 8.69333 384.676 13.1733 384.676 18.72V49.6C384.676 56.96 381.369 62.3467 374.756 65.76L387.556 112ZM349.636 49.6C350.382 49.6 351.022 49.3333 351.556 48.8C352.196 48.16 352.516 47.4667 352.516 46.72V21.6C352.516 20.7467 352.196 20.0533 351.556 19.52C351.022 18.9867 350.382 18.72 349.636 18.72H340.676V49.6H349.636Z" fill="#F9F9F9" />
                 <path d="M279.419 112H243.579C238.032 112 233.286 110.293 229.339 106.88C225.392 103.36 223.419 98.8267 223.419 93.28V18.72C223.419 13.1733 225.392 8.69333 229.339 5.28C233.286 1.76 238.032 0 243.579 0H279.419C284.966 0 289.712 1.76 293.659 5.28C297.606 8.69333 299.579 13.1733 299.579 18.72V93.28C299.579 98.8267 297.606 103.36 293.659 106.88C289.712 110.293 284.966 112 279.419 112ZM264.539 93.28C265.286 93.28 265.926 93.0133 266.459 92.48C267.099 91.9467 267.419 91.2533 267.419 90.4V21.6C267.419 20.7467 267.099 20.0533 266.459 19.52C265.926 18.9867 265.286 18.72 264.539 18.72H258.459C257.712 18.72 257.019 18.9867 256.379 19.52C255.846 20.0533 255.579 20.7467 255.579 21.6V90.4C255.579 91.2533 255.846 91.9467 256.379 92.48C257.019 93.0133 257.712 93.28 258.459 93.28H264.539Z" fill="#F9F9F9" />
                 <path d="M188.325 112H156.165V0H219.365V18.72H188.325V45.92H216.485V64.64H188.325V112Z" fill="#F9F9F9" />
