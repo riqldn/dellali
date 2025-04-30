@@ -261,7 +261,7 @@ export default function Home() {
       <div className="fixed top-0 min-h-screen w-full">
 
 
-        <section className="absolute top-0  z-20 w-full min-h-svh md:min-h-screen ">
+        <section className="absolute top-0  z-20 w-full min-h-screen md:min-h-screen ">
 
           <div className="pointer-events-none flex h-svh md:h-full w-full justify-center flex-row items-center absolute top-0 z-50 text-secondary font-instrument">
             <h1 className="text-center pointer-events-auto">TELLING THE STORIES THAT MATTER</h1>
@@ -354,7 +354,7 @@ export default function Home() {
           <motion.div style={{ clipPath: clipPathSanctuary }} className="absolute z-[54] top-0 w-full min-h-screen">
             <motion.div className="absolute top-0 w-full min-h-screen">
               <Video muted loop controls={false} className="absolute top-0 min-h-screen w-full" src={sanctuary}></Video>
-              <div className="w-full p-4 md:p-4 min-h-svh md:min-h-screen flex flex-col justify-end absolute top-0">
+              <div className="w-full p-4 md:p-4 min-h-dvh md:min-h-screen flex flex-col justify-end absolute top-0">
 
                 <div className="mx-auto relative bottom-0  flex flex-row w-full justify-between ">
 
@@ -386,7 +386,7 @@ export default function Home() {
 
 
               <Video muted loop controls={false} className="absolute top-0 min-h-screen w-full" src={myFather}></Video>
-              <div className="w-full p-4 md:p-4 min-h-svh md:min-h-screen flex flex-col justify-end absolute top-0">
+              <div className="w-full p-4 md:p-4 min-h-dvh md:min-h-screen flex flex-col justify-end absolute top-0">
                 <div className="mx-auto relative bottom-0  flex flex-row w-full justify-between ">
                   <span className="self-end text-primary flex flex-col font-rockstar">
                     <span className="block overflow-hidden mb-[-10px] ">
@@ -418,7 +418,7 @@ export default function Home() {
 
 
               <Video muted loop controls={false} className="absolute top-0 min-h-screen w-full" src={chaps}></Video>
-              <div className="w-full p-4 md:p-4 min-h-svh md:min-h-screen flex flex-col justify-end absolute top-0">
+              <div className="w-full p-4 md:p-4 min-h-dvh md:min-h-screen flex flex-col justify-end absolute top-0">
                 <div className="mx-auto relative bottom-0  flex flex-row w-full justify-between ">
                   <span className="self-end text-primary flex flex-col font-rockstar">
                     <span className="block overflow-hidden mb-[-10px] ">
@@ -450,7 +450,7 @@ export default function Home() {
 
 
               <Video muted loop controls={false} className="absolute top-0 min-h-screen w-full" src={chapsUncut}></Video>
-              <div className="w-full p-4 md:p-4 min-h-svh md:min-h-screen flex flex-col justify-end absolute top-0">
+              <div className="w-full p-4 md:p-4 min-h-dvh md:min-h-screen flex flex-col justify-end absolute top-0">
                 <div className="mx-auto relative bottom-0  flex flex-row w-full justify-between ">
                   <span className="self-end text-primary flex flex-col font-rockstar">
                     <span className="block overflow-hidden mb-[-10px] ">
