@@ -174,7 +174,7 @@ body {
   }
 
   .about-heading {
-    @apply text-xl!;
+    font-size: 4rem !important;
   }
 
   .about-subheader {
@@ -182,13 +182,13 @@ body {
   }
 
   .about-paragraph {
-    @apply text-lg!;
+  font-size: 2rem !important;
     max-width: 55ch !important;
 
   }
 
   .about-cta {
-    @apply text-lg!;
+    font-size: 2rem !important;
   }
 
   /* .spacerAbout{
@@ -243,6 +243,34 @@ body {
 
   .about-cta {
     @apply text-smd!;
+  }
+
+  /* .spacerAbout{
+    min-height: 50vh !important;
+  } */
+}
+
+@media screen and (device-width:1024px) and (device-height:600px) {
+
+  .about-section{
+    @apply gap-0!;
+  }
+  .about-heading {
+   font-size: 2rem !important;
+  }
+
+  .about-subheader {
+    @apply text-md!;
+  }
+
+  .about-paragraph {
+    @apply text-base!;
+    max-width: 55ch !important;
+
+  }
+
+  .about-cta {
+    @apply text-md!;
   }
 
   /* .spacerAbout{
