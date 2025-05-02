@@ -380,7 +380,7 @@ export default function Home() {
           </motion.div>
 
           {/* Father */}
-          <motion.div style={{ clipPath: clipPathFather }} className="absolute z-[53] top-0 w-full min-h-screen">
+          <motion.div  className="absolute z-[53] top-0 w-full min-h-screen">
             <motion.div className="absolute z-[53] top-0 w-full min-h-screen">
 
 
@@ -412,6 +412,8 @@ export default function Home() {
 
 
           {/* Chaps x Co-op */}
+
+{/*           
           <motion.div style={{ clipPath: clipPathChaps }} className="absolute z-[52] top-0 w-full min-h-screen">
             <motion.div className="absolute z-[53] top-0 w-full min-h-screen">
 
@@ -440,11 +442,12 @@ export default function Home() {
 
 
             </motion.div>
-          </motion.div>
+          </motion.div> */}
 
 
           {/* Chaps Uncut */}
-          <motion.div className="absolute z-[51] top-0 w-full min-h-screen">
+
+          {/* <motion.div className="absolute z-[51] top-0 w-full min-h-screen">
             <motion.div className="absolute top-0 w-full min-h-screen">
 
 
@@ -472,7 +475,7 @@ export default function Home() {
 
 
             </motion.div>
-          </motion.div>
+          </motion.div> */}
 
         </motion.section>
 
@@ -493,10 +496,10 @@ export default function Home() {
       <div ref={three} className="min-h-screen w-full"></div>
       <div className="min-h-24"></div>
       <div ref={four} className="min-h-screen w-full"></div>
-      <div className="min-h-24"></div>
-      <div ref={five} className="min-h-screen w-full"></div>
-      <div className="min-h-24"></div>
-      <div ref={six} className="min-h-screen w-full"></div>
+      
+      {/* <div className="min-h-24"></div> */}
+      {/* <div ref={five} className="min-h-screen w-full"></div> */}
+    
       <Image className="overlay" src={grain} alt='' quality={80} sizes="100vw" />
     </div>
 
