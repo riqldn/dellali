@@ -296,7 +296,7 @@ export default function Home() {
           {/* In The Grain */}
           <motion.div style={{ clipPath: clipPathSelf }} className="absolute z-[56] top-0 w-full min-h-screen">
 
-            <Video muted autoPlay loop controls={false} className="absolute top-0 min-h-screen w-full" src={inTheGrain}></Video>
+            <Video muted autoPlay playsinline loop controls={false} className="absolute top-0 min-h-screen w-full" src={inTheGrain}></Video>
             <div className="w-full p-4 md:p-4 min-h-dvh md:min-h-screen flex flex-col justify-end absolute top-0">
               <div className="mx-auto relative bottom-0  flex flex-row w-full justify-between ">
                 <span className="self-end text-primary flex flex-col font-rockstar">
