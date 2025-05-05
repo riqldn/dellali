@@ -28,8 +28,15 @@ export default function works() {
 
         const video = document.querySelector('mux-video')
         
-        video.play()
-            
+        
+
+        video.addEventListener('mouseover', ()=>{
+            video.play()
+        })
+
+             video.addEventListener('mouseleave', ()=>{
+            video.pause()
+        })  
 
     }, [])
     return (
@@ -62,7 +69,7 @@ export default function works() {
 
                         <div className='self-center w-11/12 md:w-10/12 lg:w-6/10'>
                             <motion.span whileHover={{ filter: "saturate(0)" }} className=''>
-                                <Video muted loop controls={false} className="absolute vid top-0 w-full" src={inTheGrain}></Video>
+                                <Video muted playsinline loop controls={false} className="absolute vid top-0 w-full" src={inTheGrain}></Video>
                             </motion.span>
                             <div className='flex flex-row justify-between'>
                                 <div className='flex flex-col md:gap-0 gap-2'>
