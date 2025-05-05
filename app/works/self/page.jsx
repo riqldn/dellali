@@ -39,7 +39,7 @@ export default function self() {
 
 
                 </div>
-                <h1 className='font-rockstar text-lg md:text-[4rem] absolute text-white bottom-0'>1C29 - Self</h1>
+                <h1 className='font-rockstar text-lg md:text-[4rem] absolute text-white bottom-0'>1C297 - Self</h1>
                 <span className='font-instrument text-md text-secondary bottom-3 md:bottom-4 right-4 absolute'>2024</span>
             </section>
 
