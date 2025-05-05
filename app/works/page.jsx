@@ -87,7 +87,7 @@ export default function works() {
 
                         <div className='self-end w-11/12 md:w-10/12 lg:w-6/10'>
                             <motion.span initial={{filter:"saturate(0)"}} whileHover={{ filter: "saturate(1)" }} className='saturate-1 md:saturate-0'>
-                                <Video muted loop controls={false} className="absolute vid top-0 w-full" src={self}></Video>
+                                <Video muted playsinline loop controls={false} className="absolute vid top-0 w-full" src={self}></Video>
                             </motion.span>
 
 
@@ -107,7 +107,7 @@ export default function works() {
 
                         <div className='self-center w-11/12 md:w-10/12 lg:w-6/10'>
                             <motion.span initial={{filter:"saturate(0)"}} whileHover={{ filter: "saturate(1)" }} className='saturate-1 md:saturate-0'>
-                                <Video muted loop controls={false} className="absolute vid top-0 w-full" src={myFather}></Video>
+                                <Video muted playsinline loop controls={false} className="absolute vid top-0 w-full" src={myFather}></Video>
                             </motion.span>
 
                             <div className='flex flex-row justify-between'>
@@ -125,7 +125,7 @@ export default function works() {
 
                         <div className='self-end w-11/12 md:w-10/12 lg:w-6/10'>
                             <motion.span initial={{filter:"saturate(0)"}} whileHover={{ filter: "saturate(1)" }} className='saturate-1 md:saturate-0'>
-                                <Video muted loop controls={false} className="absolute vid top-0 w-full" src={sanctuary}></Video>
+                                <Video muted loop playsinline controls={false} className="absolute vid top-0 w-full" src={sanctuary}></Video>
                             </motion.span>
                             <div className='flex flex-row justify-between'>
                                 <div className='flex flex-col gap-2 md:gap-0'>
@@ -142,7 +142,7 @@ export default function works() {
 
                         <div className='self-center  w-11/12 md:w-10/12 lg:w-6/10'>
                             <motion.span initial={{filter:"saturate(0)"}} whileHover={{ filter: "saturate(1)" }} className='saturate-1 md:saturate-0'>
-                                <Video muted loop controls={false} className="absolute vid top-0 w-full" src={chaps}></Video>
+                                <Video muted loop playsinline controls={false} className="absolute vid top-0 w-full" src={chaps}></Video>
                             </motion.span>
                             <div className='flex flex-row justify-between'>
                                 <div className='flex flex-col gap-2 md:gap-0'>
@@ -159,7 +159,7 @@ export default function works() {
 
                         <div className='self-end w-11/12 md:w-10/12 lg:w-6/10'>
                             <motion.span initial={{filter:"saturate(0)"}} whileHover={{ filter: "saturate(1)" }} className='saturate-1 md:saturate-0'>
-                                <Video muted loop controls={false} className="absolute vid top-0 w-full" src={chapsUncut}></Video>
+                                <Video muted loop playsinline controls={false} className="absolute vid top-0 w-full" src={chapsUncut}></Video>
                             </motion.span>
                             <div className='flex flex-row justify-between'>
                                 <div className='flex flex-col gap-2 md:gap-0'>

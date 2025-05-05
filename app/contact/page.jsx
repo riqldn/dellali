@@ -41,7 +41,7 @@ export default function Home() {
         const sequence = [
             ['.home-header', { y: 0 }, { ease: "easeInOut", duration: 1 }],
             ['.home-bottom', { y: 0 }, { ease: "easeInOut", duration: 1, at: '<' }],
-            ['.main-header', { y: 0 }, { ease: "easeInOut", duration: 1}]
+            ['.main-header', { y: 0 }, { ease: "easeInOut", duration: 1 }]
 
 
         ]
@@ -159,33 +159,35 @@ export default function Home() {
 
 
                             }}
-                            className="pb-4 fixed flex flex-row w-full md:hidden min-h-svh z-[60] top-0 left-0 backdrop-blur-md">
+                            className="pb-4 fixed flex flex-row w-full md:hidden min-h-screen top-0 left-0 z-[60] ">
+                            <div className="flex flex-row w-full md:hidden min-h-svh z-[60] top-0 left-0 backdrop-blur-md">
+                                <div className=" self-end flex flex-col w-11/12 mx-auto text-xl font-rockstar">
+                                    <motion.span variants={{ initial: { opacity: 0 }, animate: { opacity: 1, transition: { duration: 0.4 } }, exit: { opacity: 0 } }}
+                                        className="home-m mix-blend-difference hover:opacity-60">
+                                        <Link href="/">Home</Link>
+                                    </motion.span>
+                                    <motion.span variants={{ initial: { opacity: 0 }, animate: { opacity: 1, transition: { duration: 0.4 } }, exit: { opacity: 0 } }}
+                                        className="about-m mix-blend-difference hover:opacity-60">
+                                        <Link href="/about">About</Link>
+                                    </motion.span>
+                                    <motion.span
+                                        variants={{ initial: { opacity: 0 }, animate: { opacity: 1, transition: { duration: 0.4 } }, exit: { opacity: 0 } }}
+                                        className="works-m mix-blend-difference hover:opacity-60">
+                                        <Link href="/works">Works(6)</Link>
+                                    </motion.span>
+                                    <motion.span className="contact-m mix-blend-difference hover:opacity-60"
+                                        variants={{
+                                            initial: { opacity: 0 },
+                                            animate: { opacity: 1, transition: { duration: 0.4 } },
+                                            exit: { opacity: 0 }
+                                        }}
+                                    >
+                                        <Link href="/contacts">Contact</Link>
+                                    </motion.span>
 
-                            <div className=" self-end flex flex-col w-11/12 mx-auto text-xl font-rockstar">
-                                <motion.span variants={{ initial: { opacity: 0 }, animate: { opacity: 1, transition: { duration: 0.4 } }, exit: { opacity: 0 } }}
-                                    className="home-m mix-blend-difference hover:opacity-60">
-                                    <Link href="/">Home</Link>
-                                </motion.span>
-                                <motion.span variants={{ initial: { opacity: 0 }, animate: { opacity: 1, transition: { duration: 0.4 } }, exit: { opacity: 0 } }}
-                                    className="about-m mix-blend-difference hover:opacity-60">
-                                    <Link href="/about">About</Link>
-                                </motion.span>
-                                <motion.span
-                                    variants={{ initial: { opacity: 0 }, animate: { opacity: 1, transition: { duration: 0.4 } }, exit: { opacity: 0 } }}
-                                    className="works-m mix-blend-difference hover:opacity-60">
-                                    <Link href="/works">Works(6)</Link>
-                                </motion.span>
-                                <motion.span className="contact-m mix-blend-difference hover:opacity-60"
-                                    variants={{
-                                        initial: { opacity: 0 },
-                                        animate: { opacity: 1, transition: { duration: 0.4 } },
-                                        exit: { opacity: 0 }
-                                    }}
-                                >
-                                    <Link href="/contacts">Contact</Link>
-                                </motion.span>
-
+                                </div>
                             </div>
+
                         </motion.div>
 
                     )}
@@ -215,7 +217,7 @@ export default function Home() {
                                 Instagram
                             </li>
                         </Link>
-                        <Link className="hover:opacity-50"  href="https://www.linkedin.com/in/dellali-defor-5a8159252/">
+                        <Link className="hover:opacity-50" href="https://www.linkedin.com/in/dellali-defor-5a8159252/">
                             <li className=" text-secondary underline">
                                 LinkedIn
                             </li>

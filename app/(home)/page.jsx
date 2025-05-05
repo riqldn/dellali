@@ -223,9 +223,9 @@ export default function Home() {
 
 
               }}
-              className="pb-4 fixed flex flex-row w-full md:hidden min-h-svh z-[60] top-0 left-0 backdrop-blur-md">
-
-              <div className=" self-end flex flex-col w-11/12 mx-auto text-xl font-rockstar">
+              className="pb-4 fixed flex flex-row w-full md:hidden min-h-screen z-[60] top-0 left-0 backdrop-blur-md">
+<div className=" flex flex-row w-full md:hidden min-h-svh z-[60] top-0 left-0 backdrop-blur-md">
+<div className=" self-end flex flex-col w-11/12 mx-auto text-xl font-rockstar">
                 <motion.span variants={{ initial: { opacity: 0 }, animate: { opacity: 1, transition: { duration: 0.4 } }, exit: { opacity: 0 } }}
                   className="home-m mix-blend-difference hover:opacity-60">
                   <Link href="/">Home</Link>
@@ -250,6 +250,9 @@ export default function Home() {
                 </motion.span>
 
               </div>
+
+</div>
+              
             </motion.div>
 
           )}
@@ -325,7 +328,7 @@ export default function Home() {
           {/* Self */}
           <motion.div style={{ clipPath: clipPathGrain }} className="absolute z-[55] top-0 w-full min-h-screen">
 
-            <Video muted autoPlay loop controls={false} className="absolute top-0 min-h-screen w-full" src={self}></Video>
+            <Video muted playsinline autoPlay loop controls={false} className="absolute top-0 min-h-screen w-full" src={self}></Video>
             <div className="w-full p-4 md:p-4 min-h-dvh md:min-h-screen flex flex-col justify-end absolute top-0">
               <div className="mx-auto relative bottom-0  flex flex-row w-full justify-between ">
                 <span className="self-end text-primary flex flex-col font-rockstar">
@@ -352,7 +355,7 @@ export default function Home() {
           {/* Sanctuary */}
           <motion.div style={{ clipPath: clipPathSanctuary }} className="absolute z-[54] top-0 w-full min-h-screen">
             <motion.div className="absolute top-0 w-full min-h-screen">
-              <Video autoPlay muted loop controls={false} className="absolute top-0 min-h-screen w-full" src={sanctuary}></Video>
+              <Video autoPlay playsinline muted loop controls={false} className="absolute top-0 min-h-screen w-full" src={sanctuary}></Video>
               <div className="w-full p-4 md:p-4 min-h-dvh md:min-h-screen flex flex-col justify-end absolute top-0">
 
                 <div className="mx-auto relative bottom-0  flex flex-row w-full justify-between ">
@@ -384,7 +387,7 @@ export default function Home() {
             <motion.div className="absolute z-[53] top-0 w-full min-h-screen">
 
 
-              <Video muted autoPlay loop controls={false} className="absolute top-0 min-h-screen w-full" src={myFather}></Video>
+              <Video muted playsinline autoPlay loop controls={false} className="absolute top-0 min-h-screen w-full" src={myFather}></Video>
               <div className="w-full p-4 md:p-4 min-h-dvh md:min-h-screen flex flex-col justify-end absolute top-0">
                 <div className="mx-auto relative bottom-0  flex flex-row w-full justify-between ">
                   <span className="self-end text-primary flex flex-col font-rockstar">
