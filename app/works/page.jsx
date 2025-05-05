@@ -70,7 +70,7 @@ export default function works() {
                     <div className='md:pt-32 flex gap-8 md:gap-16 flex-col w-full'>
 
                         <div className='self-center w-11/12 md:w-10/12 lg:w-6/10'>
-                            <motion.span initial={{filter:"saturate(0)"}} whileHover={{ filter: "saturate(1)" }} className=''>
+                            <motion.span initial={{filter:"saturate(0)"}} whileHover={{ filter: "saturate(1)" }} className='saturate-1'>
                                 <Video muted playsinline loop controls={false} className="absolute vid top-0 w-full" src={inTheGrain}></Video>
                             </motion.span>
                             <div className='flex flex-row justify-between'>
@@ -86,7 +86,7 @@ export default function works() {
                         </div>
 
                         <div className='self-end w-11/12 md:w-10/12 lg:w-6/10'>
-                            <motion.span whileHover={{ filter: "saturate(0)" }} className=''>
+                            <motion.span initial={{filter:"saturate(0)"}} whileHover={{ filter: "saturate(1)" }} className='saturate-1 md:saturate-0'>
                                 <Video muted loop controls={false} className="absolute vid top-0 w-full" src={self}></Video>
                             </motion.span>
 
@@ -98,7 +98,7 @@ export default function works() {
                                     <span className='font-instrument text-sm md:text-md text-primary block'>2024</span>
                                 </div>
                                 <span className="works-nav pt-1 text-sm md:text-md inline-block underline text-primary hover:opacity-60">
-                                    <Link href="/works">View Project</Link>
+                                    <Link href="/works/self">View Project</Link>
                                 </span>
                             </div>
 
@@ -106,7 +106,7 @@ export default function works() {
 
 
                         <div className='self-center w-11/12 md:w-10/12 lg:w-6/10'>
-                            <motion.span whileHover={{ filter: "saturate(0)" }} className=''>
+                            <motion.span initial={{filter:"saturate(0)"}} whileHover={{ filter: "saturate(1)" }} className='saturate-1 md:saturate-0'>
                                 <Video muted loop controls={false} className="absolute vid top-0 w-full" src={myFather}></Video>
                             </motion.span>
 
@@ -116,7 +116,7 @@ export default function works() {
                                     <span className='font-instrument text-sm md:text-md text-primary block'>2024</span>
                                 </div>
                                 <span className="works-nav pt-1 text-sm md:text-md inline-block underline text-primary hover:opacity-60">
-                                    <Link href="/works">View Project</Link>
+                                    <Link href="/works/myfather">View Project</Link>
                                 </span>
                             </div>
 
@@ -124,7 +124,7 @@ export default function works() {
 
 
                         <div className='self-end w-11/12 md:w-10/12 lg:w-6/10'>
-                            <motion.span whileHover={{ filter: "saturate(0)" }} className=''>
+                            <motion.span initial={{filter:"saturate(0)"}} whileHover={{ filter: "saturate(1)" }} className='saturate-1 md:saturate-0'>
                                 <Video muted loop controls={false} className="absolute vid top-0 w-full" src={sanctuary}></Video>
                             </motion.span>
                             <div className='flex flex-row justify-between'>
@@ -133,7 +133,7 @@ export default function works() {
                                     <span className='font-instrument text-sm md:text-md text-primary block'>2024</span>
                                 </div>
                                 <span className="works-nav pt-1 text-sm md:text-md inline-block underline text-primary hover:opacity-60">
-                                    <Link href="/works">View Project</Link>
+                                    <Link href="/works/sanctuary">View Project</Link>
                                 </span>
                             </div>
 
@@ -141,7 +141,7 @@ export default function works() {
 
 
                         <div className='self-center  w-11/12 md:w-10/12 lg:w-6/10'>
-                            <motion.span whileHover={{ filter: "saturate(0)" }} className=''>
+                            <motion.span initial={{filter:"saturate(0)"}} whileHover={{ filter: "saturate(1)" }} className='saturate-1 md:saturate-0'>
                                 <Video muted loop controls={false} className="absolute vid top-0 w-full" src={chaps}></Video>
                             </motion.span>
                             <div className='flex flex-row justify-between'>
@@ -150,7 +150,7 @@ export default function works() {
                                     <span className='font-instrument text-sm md:text-md text-primary block'>2024</span>
                                 </div>
                                 <span className="works-nav pt-1 text-sm md:text-md inline-block underline text-primary hover:opacity-60">
-                                    <Link href="/works">View Project</Link>
+                                    <Link href="/works/chapsxcoop">View Project</Link>
                                 </span>
                             </div>
 
@@ -158,7 +158,7 @@ export default function works() {
 
 
                         <div className='self-end w-11/12 md:w-10/12 lg:w-6/10'>
-                            <motion.span whileHover={{ filter: "saturate(0)" }} className=''>
+                            <motion.span initial={{filter:"saturate(0)"}} whileHover={{ filter: "saturate(1)" }} className='saturate-1 md:saturate-0'>
                                 <Video muted loop controls={false} className="absolute vid top-0 w-full" src={chapsUncut}></Video>
                             </motion.span>
                             <div className='flex flex-row justify-between'>
@@ -167,7 +167,7 @@ export default function works() {
                                     <span className='font-instrument text-sm md:text-md text-primary block'>2024</span>
                                 </div>
                                 <span className="works-nav pt-1 text-sm md:text-base inline-block underline text-primary hover:opacity-60">
-                                    <Link href="/works">View Project</Link>
+                                    <Link href="/works/chapsuncut">View Project</Link>
                                 </span>
                             </div>
 

@@ -293,7 +293,7 @@ export default function Home() {
           {/* In The Grain */}
           <motion.div style={{ clipPath: clipPathSelf }} className="absolute z-[56] top-0 w-full min-h-screen">
 
-            <Video muted loop controls={false} className="absolute top-0 min-h-screen w-full" src={inTheGrain}></Video>
+            <Video muted autoPlay loop controls={false} className="absolute top-0 min-h-screen w-full" src={inTheGrain}></Video>
             <div className="w-full p-4 md:p-4 min-h-dvh md:min-h-screen flex flex-col justify-end absolute top-0">
               <div className="mx-auto relative bottom-0  flex flex-row w-full justify-between ">
                 <span className="self-end text-primary flex flex-col font-rockstar">
@@ -307,7 +307,7 @@ export default function Home() {
                 </span>
                 <span className="self-end inline-block -translate-y-[10px] overflow-hidden">
                   <motion.span initial={{ translateY: "100%" }} animate={isInitial ? { translateY: "0%" } : isSelf ? { translateY: "0%" } : isSpace ? { translateY: "0%" } : { translateY: "100%" }} className="relative hover:opacity-75 ease-in-out duration-300 inline-block text-primary font-rockstar text-[1.75] md:text-md md:pb-2 self-end underline">
-                    <Link href='' >
+                    <Link href='/works/inthegrain' >
                       Full Version
                     </Link>
                   </motion.span>
@@ -325,7 +325,7 @@ export default function Home() {
           {/* Self */}
           <motion.div style={{ clipPath: clipPathGrain }} className="absolute z-[55] top-0 w-full min-h-screen">
 
-            <Video muted loop controls={false} className="absolute top-0 min-h-screen w-full" src={self}></Video>
+            <Video muted autoPlay loop controls={false} className="absolute top-0 min-h-screen w-full" src={self}></Video>
             <div className="w-full p-4 md:p-4 min-h-dvh md:min-h-screen flex flex-col justify-end absolute top-0">
               <div className="mx-auto relative bottom-0  flex flex-row w-full justify-between ">
                 <span className="self-end text-primary flex flex-col font-rockstar">
@@ -338,7 +338,7 @@ export default function Home() {
 
                 </span>
                 <span className="-translate-y-[10px] text-primary hover:opacity-75 ease-in-out duration-300 font-rockstar text-[1.75] md:text-md md:pb-2 self-end underline">
-                  <Link href='' >
+                  <Link href='/works/self' >
                     Full Version
                   </Link>
                 </span>
@@ -352,7 +352,7 @@ export default function Home() {
           {/* Sanctuary */}
           <motion.div style={{ clipPath: clipPathSanctuary }} className="absolute z-[54] top-0 w-full min-h-screen">
             <motion.div className="absolute top-0 w-full min-h-screen">
-              <Video muted loop controls={false} className="absolute top-0 min-h-screen w-full" src={sanctuary}></Video>
+              <Video autoPlay muted loop controls={false} className="absolute top-0 min-h-screen w-full" src={sanctuary}></Video>
               <div className="w-full p-4 md:p-4 min-h-dvh md:min-h-screen flex flex-col justify-end absolute top-0">
 
                 <div className="mx-auto relative bottom-0  flex flex-row w-full justify-between ">
@@ -369,7 +369,7 @@ export default function Home() {
                   </span>
 
                   <span className="-translate-y-[10px] text-primary hover:opacity-75 ease-in-out duration-300 font-rockstar text-[1.75] md:text-md md:pb-2 self-end underline">
-                    <Link href='' >
+                    <Link href='/works/sanctuary' >
                       Full Version
                     </Link>
                   </span>
@@ -384,7 +384,7 @@ export default function Home() {
             <motion.div className="absolute z-[53] top-0 w-full min-h-screen">
 
 
-              <Video muted loop controls={false} className="absolute top-0 min-h-screen w-full" src={myFather}></Video>
+              <Video muted autoPlay loop controls={false} className="absolute top-0 min-h-screen w-full" src={myFather}></Video>
               <div className="w-full p-4 md:p-4 min-h-dvh md:min-h-screen flex flex-col justify-end absolute top-0">
                 <div className="mx-auto relative bottom-0  flex flex-row w-full justify-between ">
                   <span className="self-end text-primary flex flex-col font-rockstar">
@@ -397,7 +397,7 @@ export default function Home() {
 
                   </span>
                   <span className="-translate-y-[10px] text-primary hover:opacity-75 ease-in-out duration-300 font-rockstar text-[1.75] md:text-md md:pb-2 self-end underline">
-                    <Link href='' >
+                    <Link href='/works/myfather' >
                       Full Version
                     </Link>
                   </span>
