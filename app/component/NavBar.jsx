@@ -92,7 +92,7 @@ export default function NavBar(props) {
                         <Link href="/works">Works(6)</Link>
                     </li>
                     <li className="contact-nav hover:opacity-60">
-                        <Link href="/contacts">Contact</Link>
+                        <Link href="/contact">Contact</Link>
                     </li>
 
                 </ul>
@@ -149,7 +149,7 @@ export default function NavBar(props) {
                                     exit: { opacity: 0 }
                                 }}
                             >
-                                <Link href="/contacts">Contact</Link>
+                                <Link href="/contact">Contact</Link>
                             </motion.span>
 
                         </div>

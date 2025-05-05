@@ -26,8 +26,9 @@ export default function works() {
         ]
         animate(sequence)
 
-
-
+        const video = document.querySelector('mux-video')
+        
+        video.play()
             
 
     }, [])
@@ -57,7 +58,7 @@ export default function works() {
 
                     </h1>
 
-                    <div className='pt-32 flex gap-8 md:gap-16 flex-col w-full'>
+                    <div className='md:pt-32 flex gap-8 md:gap-16 flex-col w-full'>
 
                         <div className='self-center w-11/12 md:w-10/12 lg:w-6/10'>
                             <motion.span whileHover={{ filter: "saturate(0)" }} className=''>
@@ -69,7 +70,7 @@ export default function works() {
                                     <span className='font-instrument text-sm md:text-md text-primary block'>2024</span>
                                 </div>
                                 <span className="works-nav pt-1 text-sm md:text-md inline-block underline text-primary hover:opacity-60">
-                                    <Link href="/works">View Project</Link>
+                                    <Link href="/works/inthegrain">View Project</Link>
                                 </span>
                             </div>
 

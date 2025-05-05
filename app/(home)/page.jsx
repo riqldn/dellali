@@ -246,7 +246,7 @@ export default function Home() {
                     exit: { opacity: 0 }
                   }}
                 >
-                  <Link href="/contacts">Contact</Link>
+                  <Link href="/contact">Contact</Link>
                 </motion.span>
 
               </div>

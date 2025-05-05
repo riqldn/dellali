@@ -190,6 +190,10 @@ body {
   .about-cta {
     font-size: 2rem !important;
   }
+  .video-play{
+    @apply !w-9/10;
+
+  }
 
   /* .spacerAbout{
     min-height: 50vh !important;
@@ -197,7 +201,10 @@ body {
 }
 
 @media screen and (min-device-width:800px) and (max-device-width:950px) and (orientation: portrait) {
+  .video-play{
+    @apply !w-9/10;
 
+  }
   .about-section {
     @apply p-8! gap-y-10! flex!;
   }
