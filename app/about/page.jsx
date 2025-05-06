@@ -78,7 +78,7 @@ export default function about() {
                     {isScrolled && <motion.section variants={{ initial: { opacity: 0 }, animate: { opacity: 1, transition: { delay: 1.2, duration: 1, ease: "easeInOut" } }, exit: { opacity: 0, transition: { duration: 1 } } }} initial="initial" animate="animate" exit="exit" className='del absolute top-0  z-[45] w-full min-h-screen bg-black '>
                         <div className='p-4 md:p-4 about-section lg:p-4 w-full auto-rows-auto sticky top-0 min-h-screen flex md:flex flex-col lg:grid gap-y-12 lg:gap-y-16  lg:grid-cols-12'>
                             <span className='text-white col-start-1 col-end-3'>(About Me)</span>
-                            <h2 className='about-heading order-1 text-smd text-white col-start-7 col-end-13 md:text-[2rem] lg:text-xl font-instrument leading-tight font-semibold'>
+                            <h2 className='about-heading order-1 text-smd text-white col-start-7 col-end-13 md:text-[2rem] lg:text-lg font-instrument leading-tight font-semibold'>
                                 Dellali is a London based filmmaker whose creative journey began after leaving behind a biomedical science career.
                             </h2>
 
