@@ -1,25 +1,14 @@
 "use client"
-import React, { useEffect } from 'react'
-import Image from "next/image";
+
 import Video from 'next-video';
 import NavBar from '../../component/NavBar'
 import inTheGrain from '/videos/in-the-grain.mp4'
 
-import { animate, AnimatePresence, motion, useInView, useMotionTemplate, useScroll, useTransform } from 'motion/react';
+import {  motion} from 'motion/react';
 
 export default function inthegrain() {
 
-    useEffect(() => {
-
-
-        const loader = document.querySelector('.loader')
-
-
-        const video = document.querySelector('mux-video')
-
-
-
-    }, [])
+  
     return (
         <div >
             <NavBar isLight={true} />
@@ -33,7 +22,7 @@ export default function inthegrain() {
 
 
                     <motion.span className='video-play w-full lg:w-6/10'>
-                        <Video loop className="vid w-full" src={inTheGrain}></Video>
+                        <Video playsinline loop className="vid w-full" src={inTheGrain}></Video>
                     </motion.span>
 
 

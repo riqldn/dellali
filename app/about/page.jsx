@@ -1,20 +1,18 @@
 "use client"
 import React from 'react'
 import { animate, AnimatePresence, motion, useInView, useMotionTemplate, useScroll, useTransform } from 'motion/react';
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import Link from "next/link";
 import NavBar from "../component/NavBar";
 import { useLenis } from "../utils/lenis";
 import Image from 'next/image';
 import Delalli from '../assets/delalli.png'
-import grain from '../assets/grain.png'
-import SlidingText from '../component/SlidingText';
 
 export default function about() {
-    const [isInView, setInView] = useState(false)
-    const lenis = useLenis();
+  
+  
     const spacer = useRef()
-    const scaleText = useScroll({ target: spacer, offset: ['start end', 'end start'] }).scrollYProgress
+   
     const isScrolled = useInView(spacer, { margin: "0px 0px 0px 0px", amount: 0.4, once: false })
 
 
