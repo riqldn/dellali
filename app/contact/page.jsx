@@ -205,7 +205,7 @@ export default function Home() {
                         <motion.h1 initial={{ y: 100 }} className="text-center main-header font-rockstar text-2xl md:text-[4rem] text-black ">Lets Connect</motion.h1>
                     </span>
                     <ul className="flex flex-row gap-8">
-                        <Link className="hover:opacity-50" href="mailto:dellali@bigkidfoundation.org">
+                        <Link className="hover:opacity-50" href="mailto:Ddefor95@gmail.com">
                             <span className="text-secondary underline">
                                 Email
                             </span>
