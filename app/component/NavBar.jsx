@@ -47,7 +47,7 @@ export default function NavBar(props) {
             about.classList.add("active")
 
         }
-        else if (window.location.pathname === '/works') {
+        else if (window.location.pathname === '/portfolio') {
             works.classList.add("active")
 
         }
@@ -100,7 +100,7 @@ export default function NavBar(props) {
                         <Link href="/about">About</Link>
                     </li>
                     <li className="works-nav hover:opacity-60">
-                        <Link href="/works">Works(4)</Link>
+                        <Link href="/portfolio">Portfolio</Link>
                     </li>
                     <li className="contact-nav hover:opacity-60">
                         <Link href="/contact">Contact</Link>
@@ -151,7 +151,7 @@ export default function NavBar(props) {
                                 <motion.span
                                     variants={{ initial: { opacity: 0 }, animate: { opacity: 1, transition: { duration: 0.4 } }, exit: { opacity: 0 } }}
                                     className="works-m mix-blend-difference hover:opacity-60">
-                                    <Link href="/works">Works(4)</Link>
+                                    <Link href="/portfolio">Portfolio</Link>
                                 </motion.span>
                                 <motion.span className="contact-m mix-blend-difference hover:opacity-60"
                                     variants={{
