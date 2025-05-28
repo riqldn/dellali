@@ -85,7 +85,7 @@ export default function about() {
                             <div className='about-text order-3 h-full justify-end text-white flex gap-6 flex-col row-start-2 col-start-1 col-end-6'>
                                 <h3 className='about-subheader font-semibold text-smd lg:text-smd'>Telling the stories that matter</h3>
                                 <p className='about-paragraph font-instrument leading-reg max-w-[55ch] md:text-base lg:text-md lg:max-w-[55ch]'>Driven by a passion for storytelling, Dellali uses filmmaking to bridge the gap between communitites and tell stories of the unrepresented. His films also help express his thoughts and emotions, collaborating with others to share both personal and collective stories</p>
-                                <Link href="/works">
+                                <Link href="/portfolio">
                                     <span className='about-cta block text-primary lg:text-md underline'>View Works</span>
                                 </Link>
                             </div>

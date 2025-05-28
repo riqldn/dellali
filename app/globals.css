@@ -32,7 +32,6 @@
   /* border: 3px solid blue; */
 
 }
-
 :root {
   --media-object-fit: cover;
   --media-object-position: 50% 50%;
@@ -50,7 +49,7 @@ body {
   width: 0px;
 }
     
-.disable-scrollbars {
+.disable-scrollbar {
   scrollbar-width: none; 
   -ms-overflow-style: none;  
   z-index: 99;
